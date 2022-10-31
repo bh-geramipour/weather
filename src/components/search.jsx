@@ -16,7 +16,7 @@ export default function Search({update}){
           
         if (city!=="")
         {  
-        let findcityaddress="http://dataservice.accuweather.com/locations/v1/cities/search" + appConfig.apikey +"&q=" + city;  
+        let findcityaddress="https://dataservice.accuweather.com/locations/v1/cities/search" + appConfig.apikey +"&q=" + city;  
         axios.get(findcityaddress)
          .then(response=>{
                     update(response.data) ;

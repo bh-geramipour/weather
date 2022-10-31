@@ -30,7 +30,7 @@ export default function Predict( {citykey,country,city}){
      
     function forcast(){
        
-        const forcastaddress="http://dataservice.accuweather.com/forecasts/v1/daily/1day/" + citykey + appConfig.apikey;
+        const forcastaddress="https://dataservice.accuweather.com/forecasts/v1/daily/1day/" + citykey + appConfig.apikey;
         axios.get(forcastaddress)
         .then(response=>{ 
 
